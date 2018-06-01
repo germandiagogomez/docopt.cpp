@@ -13,7 +13,7 @@ if host_machine.system() == 'android'
   stdlib_includes += include_directories(
     [join_paths(meson.get_cross_property('stdlib_rootdir'), 'include'),
      join_paths(meson.get_cross_property('stdlib_rootdir'), 'libs/armeabi-v7a/include'),
-     '/Users/germandiago/android/crystax-ndk-10.3.2/platforms/android-19/arch-arm/usr/include'])
+    ])
 endif
 
 docopt_inc = include_directories('..')
