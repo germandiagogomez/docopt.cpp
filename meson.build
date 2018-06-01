@@ -16,7 +16,7 @@ if host_machine.system() == 'android'
     ])
 endif
 
-docopt_inc = include_directories('..')
+docopt_inc = include_directories('.')
 docopt_lib = static_library('docopt', sources : [docopt_sources, docopt_headers],
                            include_directories : [docopt_inc, stdlib_includes])
 
